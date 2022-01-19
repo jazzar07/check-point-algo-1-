@@ -1,0 +1,28 @@
+algorithm Phrase1
+var
+nbrcaract :integer:=0 ;
+nbrvoy :integer:=0  ;
+nbrmots :integer:=0 ;  
+i :integer:=0  ; 
+ch : string ; 
+begin
+read(ch)
+if length(ch) == 0 or ch=="." do 
+   write ("la chaine est vide )
+ else 
+   for i from 1 to (longth(ch)-1) do 
+   if (ch[i] == char) then
+ nbrcaract := nbrcaract+1
+      else
+    if ch[i] = '' then
+     nbrmots := nbrmots +1 
+    else
+   if (ch[i] = 'e' ) or (ch[i] = 'i' ) or (ch[i] = 'a' ) or (ch[i] = 'y' ) or (ch[i] = 'u' ) or (ch[i] = 'o' ) then
+   nbrvoy := nbrvoy+1
+   endif
+endif
+ endfor
+  write(nbrcaract)
+  write(nbrmots +1)
+   write(nbrvoy)
+  end
